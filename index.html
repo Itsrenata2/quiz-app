@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              quicksand: ["Quicksand", "sans-serif"],
+            },
+            colors: {
+              raisin: "#2E282A",
+              champagne: "#EEE0CB",
+              vanilla: "#D4E09B",
+              chestnut: "#A44A3F",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Quiz - My Lady Jane</title>
+  </head>
+  <body class="bg-raisin font-quicksand">
+    <header class="text-champagne mt-20">
+      <h1 class="text-center text-2xl font-bold">My Lady Jane - Quiz</h1>
+      <h2 class="text-center text-xl">
+        see if you are a true fan of the show!
+      </h2>
+    </header>
+    <main>
+      <!-- QUESTION 01 -->
+      <div
+        class="bg-champagne w-3/5 m-auto my-20 rounded-md text-raisin p-20 firstQuestion"
+      >
+        <h3 class="font-bold">
+          question 01 - which ethian form does Guildford transform into?
+        </h3>
+        <div class="mt-6" id="optsFirstQuestion">
+          <input
+            type="radio"
+            id="option1"
+            name="question1"
+            value="a"
+            class="mr-4 inputFirstQuestion"
+          />
+          <label for="option1" class="">a) a horse</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option2"
+            name="question1"
+            value="b"
+            class="mr-4 inputFirstQuestion"
+          />
+          <label for="option2" class="">b) a mouse</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option3"
+            name="question1"
+            value="c"
+            class="mr-4 inputFirstQuestion"
+          />
+          <label for="option3" class="">c) a fox</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option4"
+            name="question1"
+            value="d"
+            class="mr-4 inputFirstQuestion"
+          />
+          <label for="option4" class="">d) a cat</label>
+        </div>
+        <button class="bg-champagne text-raisin mt-8 rounded-lg px-3 font-bold py-1 hover:bg-raisin hover:text-champagne submitBtnOne">submit answer</button>
+      </div>
+
+      <!-- QUESTION 02 -->
+      <div class="bg-champagne w-3/5 m-auto my-20 rounded-md text-raisin p-20 hidden secondQuestion">
+        <h3 class="font-bold">
+          question 02 - what is the name of Edward's dog?
+        </h3>
+        <div class="mt-6" id="optsSecondQuestion">
+          <input
+            type="radio"
+            id="option1"
+            name="question2"
+            value="a"
+            class="mr-4"
+          />
+          <label for="option1" class="">a) dogtunia</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option2"
+            name="question2"
+            value="b"
+            class="mr-4"
+          />
+          <label for="option2" class="">b) dudley</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option3"
+            name="question2"
+            value="c"
+            class="mr-4"
+          />
+          <label for="option3" class="">c) petunia</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option4"
+            name="question2"
+            value="d"
+            class="mr-4"
+          />
+          <label for="option4" class="">d) catunia</label>
+        </div>
+        <button class="bg-champagne text-raisin mt-8 rounded-lg px-3 font-bold py-1 hover:bg-raisin hover:text-champagne submitBtnTwo">submit answer</button>
+      </div>
+
+      <!-- QUESTION 03 -->
+      <div class="bg-champagne w-3/5 m-auto my-20 rounded-md text-raisin p-20 hidden thirdQuestion">
+        <h3 class="font-bold">
+          question 03 - where does Guildford and Jane meet for the first time?
+        </h3>
+        <div class="mt-6" id="optsThirdQuestion">
+          <input
+            type="radio"
+            id="option1"
+            name="question3"
+            value="a"
+            class="mr-4"
+          />
+          <label for="option1" class="">a) at their wedding</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option2"
+            name="question3"
+            value="b"
+            class="mr-4"
+          />
+          <label for="option2" class="">b) at a tavern</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option3"
+            name="question3"
+            value="c"
+            class="mr-4"
+          />
+          <label for="option3" class="">c) in the dudley's country house</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option4"
+            name="question3"
+            value="d"
+            class="mr-4"
+          />
+          <label for="option4" class="">d) in a stable</label>
+        </div>
+        <button class="bg-champagne text-raisin mt-8 rounded-lg px-3 font-bold py-1 hover:bg-raisin hover:text-champagne submitBtnThree">submit answer</button>
+      </div>
+
+      <!-- QUESTION 04 -->
+      <div class="bg-champagne w-3/5 m-auto my-20 rounded-md text-raisin p-20 hidden fourthQuestion">
+        <h3 class="font-bold">
+          question 04 - how many sisters does Jane have?
+        </h3>
+        <div class="mt-6" id="optsFourthQuestion">
+          <input
+            type="radio"
+            id="option1"
+            name="question4"
+            value="a"
+            class="mr-4"
+          />
+          <label for="option1" class="">a) four</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option2"
+            name="question4"
+            value="b"
+            class="mr-4"
+          />
+          <label for="option2" class="">b) one and a half sibling</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option3"
+            name="question4"
+            value="c"
+            class="mr-4"
+          />
+          <label for="option3" class="">c) two</label>
+          <br />
+
+          <input
+            type="radio"
+            id="option4"
+            name="question4"
+            value="d"
+            class="mr-4"
+          />
+          <label for="option4" class="">d) one</label>
+        </div>
+        <button class="bg-champagne text-raisin mt-8 rounded-lg px-3 font-bold py-1 hover:bg-raisin hover:text-champagne submitBtnFour">submit answer</button>
+      </div>
+
+      <!-- MESSAGE -->
+      <div class="bg-champagne text-center w-3/5 m-auto my-20 rounded-md text-raisin p-20 hidden message">
+        <h3 class="font-bold">
+          CONGRATULATIONS ! YOU ARE TRULY A GREAT FAN !
+        </h3>
+        
+      </div>
+
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -16,6 +16,8 @@ const fourthQuestionDiv = document.querySelector('.fourthQuestion');
 const inputsOptsFour = document.getElementById('optsFourthQuestion').getElementsByTagName('input');
 const submitBtnFour = document.querySelector('.submitBtnFour');
 
+let scorePts = 0;
+const score = document.querySelector('.score');
 const message = document.querySelector('.message');
 
 const getInputValueOne = function() {
@@ -26,6 +28,8 @@ const getInputValueOne = function() {
             const checkedOpt = optionValue;
             console.log(checkedOpt);
             if(checkedOpt == 'a') {
+                scorePts = 1;
+                score.textContent = `${scorePts} / 4`;
                 firstQuestionDiv.classList.remove('bg-champagne');
                 firstQuestionDiv.classList.add('bg-vanilla');
                 setTimeout(function () {
@@ -53,6 +57,8 @@ const getInputValueTwo = function() {
             const checkedOpt = optionValue;
             console.log(checkedOpt);
             if(checkedOpt == 'c') {
+                scorePts = 2;
+                score.textContent = `${scorePts} / 4`;
                 secondQuestionDiv.classList.remove('bg-champagne');
                 secondQuestionDiv.classList.add('bg-vanilla');
                 setTimeout(function () {
@@ -80,6 +86,8 @@ const getInputValueThree = function() {
             const checkedOpt = optionValue;
             console.log(checkedOpt);
             if(checkedOpt == 'b') {
+                scorePts = 3;
+                score.textContent = `${scorePts} / 4`;
                 thirdQuestionDiv.classList.remove('bg-champagne');
                 thirdQuestionDiv.classList.add('bg-vanilla');
                 setTimeout(function () {
@@ -107,6 +115,8 @@ const getInputValueFour = function() {
             const checkedOpt = optionValue;
             console.log(checkedOpt);
             if(checkedOpt == 'c') {
+                scorePts = 4;
+                score.textContent = `${scorePts} / 4`;
                 fourthQuestionDiv.classList.remove('bg-champagne');
                 fourthQuestionDiv.classList.add('bg-vanilla');
                 setTimeout(function () {
